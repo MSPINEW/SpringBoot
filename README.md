@@ -1,2 +1,2 @@
 # SpringBoot
-Spring Boot Samples
+SpringBoot + Jersey + Swagger
