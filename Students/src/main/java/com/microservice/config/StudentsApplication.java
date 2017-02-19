@@ -16,9 +16,13 @@ public class StudentsApplication {
 	public static void main(String[] args) {
 		hmStudent = new HashMap<Long, Student>();
 
-		Student one = new Student("John", "math");
-		hmStudent.put(new Long(one.getId()), one);
+		Student one = new Student(1 ,"John", "math");
+		hmStudent.put(one.getId(), one);
 
+		Student two = new Student(2, "Venkat", "IT");
+		hmStudent.put(two.getId(), two);
+
+		
 		SpringApplication.run(StudentsApplication.class, args);
 	}
 }

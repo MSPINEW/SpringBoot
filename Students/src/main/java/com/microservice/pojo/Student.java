@@ -5,18 +5,17 @@ import java.util.Date;
 public class Student {
 	private long id;
 	private String name;
-
+	private String subject;
+	
 	public Student() {
 	}
 
-	public Student(String name, String subject) {
-		this.id = (new Date()).getTime();
+	public Student(long id, String name, String subject) {
+		this.id = id;
 		this.name = name;
 		this.subject = subject;
 	}
-
-	private String subject;
-
+	
 	public long getId() {
 		return id;
 	}
@@ -41,4 +40,6 @@ public class Student {
 	public String toString() {
 		return "Student{" + "id=" + id + ", name='" + name + '\'' + ", subject='" + subject + '\'' + '}';
 	}
+	
+	
 }
